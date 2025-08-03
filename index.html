@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHAWNFLIX - Unlimited Entertainment</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen">
+        <div class="loading-animation"></div>
+        <div class="loading-text">SHAWNFLIX</div>
+        <div class="loading-subtitle">Loading your entertainment experience...</div>
+        <div class="loading-progress">
+            <div class="loading-progress-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-content">
+            <a href="#" class="logo">SHAWNFLIX</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#movies" class="nav-link">Movies</a>
+                <a href="#tv-shows" class="nav-link">TV Shows</a>
+                <a href="#my-list" class="nav-link">My List</a>
+            </div>
+            <div class="nav-actions">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search movies & TV shows..." class="search-input">
+                    <button id="searchBtn" class="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="user-menu">
+                    <div class="user-info">
+                        <div class="user-name">John Doe</div>
+                        <div class="user-status">Premium</div>
+                    </div>
+                    <div class="user-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="#profile">
+                            <i class="fas fa-user-circle"></i>
+                            Profile
+                        </a>
+                        <a href="#settings">
+                            <i class="fas fa-cog"></i>
+                            Settings
+                        </a>
+                        <a href="#downloads">
+                            <i class="fas fa-download"></i>
+                            Downloads
+                        </a>
+                        <div class="divider"></div>
+                        <a href="#help">
+                            <i class="fas fa-question-circle"></i>
+                            Help Center
+                        </a>
+                        <a href="#logout">
+                            <i class="fas fa-sign-out-alt"></i>
+                            Sign Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Hero Section with Featured Content -->
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-particles"></div>
+            </div>
+            <div class="hero-content">
+                <div class="featured-content">
+                    <h1 class="featured-title">SHAWNFLIX</h1>
+                    <p class="featured-description">Unlimited movies, TV shows, and more. Watch anywhere. Cancel anytime.</p>
+                    <div class="featured-actions">
+                        <button class="btn btn-play">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="btn btn-info">
+                            <i class="fas fa-info-circle"></i> More Info
+                        </button>
+                        <button class="btn btn-trailer">
+                            <i class="fas fa-film"></i> Watch Trailer
+                        </button>
+                    </div>
+                    <div class="featured-meta">
+                        <span class="meta-item"><i class="fas fa-star"></i> Premium</span>
+                        <span class="meta-item"><i class="fas fa-clock"></i> 24/7</span>
+                        <span class="meta-item"><i class="fas fa-calendar"></i> 2024</span>
+                        <span class="meta-item"><i class="fas fa-closed-captioning"></i> CC</span>
+                        <span class="meta-item"><i class="fas fa-audio-description"></i> AD</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span>Scroll to explore</span>
+            </div>
+        </section>
+
+        <!-- Content Rows -->
+        <section class="content-section" id="movies">
+            <div class="content-row">
+                <h2 class="row-title">Trending Now</h2>
+                <div class="movie-row" id="trendingRow">
+                    <div class="movie-row-content">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                    <button class="row-arrow row-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="row-arrow row-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <h2 class="row-title">Popular Movies</h2>
+                <div class="movie-row" id="popularMoviesRow">
+                    <div class="movie-row-content">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                    <button class="row-arrow row-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="row-arrow row-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <h2 class="row-title">Action & Adventure</h2>
+                <div class="movie-row" id="actionRow">
+                    <div class="movie-row-content">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                    <button class="row-arrow row-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="row-arrow row-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <h2 class="row-title">Drama</h2>
+                <div class="movie-row" id="dramaRow">
+                    <div class="movie-row-content">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                    <button class="row-arrow row-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="row-arrow row-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="content-row">
+                <h2 class="row-title">Comedy</h2>
+                <div class="movie-row" id="comedyRow">
+                    <div class="movie-row-content">
+                        <!-- Movies will be populated by JavaScript -->
+                    </div>
+                    <button class="row-arrow row-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="row-arrow row-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TV Shows Section -->
+        <section class="content-section" id="tv-shows">
+            <div class="content-row">
+                <h2 class="row-title">Popular TV Shows</h2>
+                <div class="movie-row" id="tvShowsRow">
+                    <div class="movie-row-content">
+                        <!-- TV Shows will be populated by JavaScript -->
+                    </div>
+                    <button class="row-arrow row-arrow-left">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="row-arrow row-arrow-right">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- My List Section -->
+        <section class="content-section" id="my-list">
+            <div class="content-row">
+                <h2 class="row-title">My List</h2>
+                <div class="movie-row" id="myListRow">
+                    <div class="movie-row-content">
+                        <!-- My List items will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Movie Detail Modal -->
+    <div class="modal" id="movieModal">
+        <div class="modal-content">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="modal-poster">
+                    <img id="modalPoster" src="" alt="Movie Poster">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-meta">
+                        <span id="modalYear"></span>
+                        <span id="modalRuntime"></span>
+                        <span id="modalRating"></span>
+                    </div>
+                    <p id="modalPlot"></p>
+                    <div class="modal-genres" id="modalGenres"></div>
+                    <div class="modal-cast" id="modalCast"></div>
+                    <div class="modal-actions">
+                        <button class="btn btn-play">
+                            <i class="fas fa-play"></i> Play
+                        </button>
+                        <button class="btn btn-add" id="addToListBtn">
+                            <i class="fas fa-plus"></i> Add to My List
+                        </button>
+                        <button class="btn btn-trailer">
+                            <i class="fas fa-film"></i> Watch Trailer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Results Modal -->
+    <div class="modal" id="searchModal">
+        <div class="modal-content search-modal">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Search Results</h2>
+                <div class="search-results" id="searchResults">
+                    <!-- Search results will be populated by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Player Modal -->
+    <div class="modal" id="videoModal">
+        <div class="modal-content video-modal">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <div class="video-player">
+                    <div class="video-placeholder">
+                        <i class="fas fa-play-circle"></i>
+                        <p>Video Player</p>
+                        <p>This is a demo - no actual video will play</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trailer Modal -->
+    <div class="modal" id="trailerModal">
+        <div class="modal-content trailer-modal">
+            <button class="modal-close">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-body">
+                <h2>Movie Trailer</h2>
+                <div class="trailer-player">
+                    <div class="trailer-placeholder">
+                        <i class="fas fa-film"></i>
+                        <p>Trailer Player</p>
+                        <p>This is a demo - no actual trailer will play</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Notification Container -->
+    <div class="notification-container" id="notificationContainer"></div>
+
+    <!-- Interactive Background Elements -->
+    <div class="floating-elements">
+        <div class="floating-element" data-speed="2"></div>
+        <div class="floating-element" data-speed="1.5"></div>
+        <div class="floating-element" data-speed="3"></div>
+        <div class="floating-element" data-speed="2.5"></div>
+        <div class="floating-element" data-speed="1.8"></div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html> 
