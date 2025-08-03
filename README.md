@@ -30,7 +30,7 @@ A modern, interactive streaming platform built with vanilla JavaScript, featurin
 
 ## 🚀 Live Demo
 
-Experience SHAWNFLIX right now! [Launch Demo]([http://localhost:8001](https://streaming-app-landing-page.netlify.app/))
+Experience SHAWNFLIX right now! [Launch Demo](https://streaming-app-landing-page.netlify.app/)
 
 ## 🛠️ Technology Stack
 
